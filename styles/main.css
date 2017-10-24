@@ -16,6 +16,10 @@
     z-index: 0;
 }
 
+.rates__bg-top {
+    height: 135px;
+}
+
 .rates .slide {
     float: none;
     height: auto;
@@ -34,12 +38,12 @@
     padding-top: 54px;
 }
 
-.slider {
+/* .slider {
     position: relative;
     z-index: 1;
-}
+} */
 
-.slider-header {
+/* .slider-header {
     position: relative;
 }
 
@@ -57,6 +61,16 @@
 }
 
 .slider-header h1 {
+    display: block;
+    margin-bottom: 88px;
+    z-index: 0;
+} */
+
+.rates__header {
+    position: relative;
+}
+
+.rates__header h1 {
     display: block;
     margin-bottom: 88px;
     z-index: 0;

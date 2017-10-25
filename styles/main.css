@@ -153,4 +153,104 @@
     margin: 0;
 }
 
+.rates__header--individual {
+    height: 340px;
+    padding-top: 86px;
+    background-color: #02903d;
+    color: #fff;
+}
+
+.rates__header--individual h1 {
+    position: relative;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.rates__header--individual h1::before {
+    position: absolute;
+    top: -38px;
+    left: calc(50% - 33px);
+    content: "";
+    display: block;
+    width: 66px;
+    height: 58px;
+    background-image: url("../images/main_sprite.png");
+    background-position: -766px -850px;
+}
+
+.rates__header--individual .btn-circle {
+    top: -5px;
+}
+
+.rates__header--individual > input + .accordeon__trigger {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    -webkit-transition: -webkit-transform .4s ease-in-out;
+    -o-transition: -o-transform .4s ease-in-out;
+    transition: transform .4s ease-in-out;
+}
+
+.rates__header--individual > input:checked + .accordeon__trigger {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.rates__content--individual {
+    position: relative;
+    display: none;
+}
+
+/* .rates__content--individual-visible {
+    display: block;
+} */
+
+.rates__content--individual::before {
+    position: absolute;
+    left: 50%;
+    content: '';
+    display: block;
+    top: 0;
+    margin: 0 0 0 -12px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px;
+    border-color: transparent;
+    border-top-color: #02903d;
+}
+
+.rates__content--individual .rates__content-top tr > td:first-child {
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.rates__content--individual .rates__content-middle tr:first-child td:nth-child(2),
+.rates__content--individual .rates__content-middle tr:nth-child(2) td:nth-child(2) {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.rates__content--individual .rates__content-middle td {
+    height: 60px;
+    line-height: 20px;
+}
+
+.rates__content--individual .rates__content-middle tr:first-child td {
+    height: 80px;
+    padding-top: 20px;
+}
+
+.rates__content--individual .rates__content-middle tr:last-child td {
+    height: 108px;
+    padding-bottom: 49px;
+}
+
 /* END - Новые тарифы */

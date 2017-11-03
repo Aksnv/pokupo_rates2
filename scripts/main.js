@@ -10,4 +10,82 @@ $(".accordeon__trigger").click(function() {
   }
 });
 
+/* Start-up */
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(2) td:nth-child(2)").mouseover(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(2)").addClass("rates__content-bg--1");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(3) td:nth-child(2)").mouseover(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(3)").addClass("rates__content-bg--1");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(4) td:nth-child(2)").mouseover(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(4)").addClass("rates__content-bg--1");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(2) td:nth-child(2)").mouseout(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(2)").removeClass("rates__content-bg--1");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(3) td:nth-child(2)").mouseout(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(3)").removeClass("rates__content-bg--1");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(4) td:nth-child(2)").mouseout(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(4)").removeClass("rates__content-bg--1");
+});
+
+/* Business */
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(5) td:nth-child(3)").mouseover(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(5)").addClass("rates__content-bg--2");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(6) td:nth-child(3)").mouseover(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(6)").addClass("rates__content-bg--2");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(7) td:nth-child(3)").mouseover(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(7)").addClass("rates__content-bg--2");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(5) td:nth-child(3)").mouseout(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(5)").removeClass("rates__content-bg--2");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(6) td:nth-child(3)").mouseout(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(6)").removeClass("rates__content-bg--2");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(7) td:nth-child(3)").mouseout(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(7)").removeClass("rates__content-bg--2");
+});
+
+/* VIP */
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(8) td:nth-child(4)").mouseover(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(8)").addClass("rates__content-bg--3");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(9) td:nth-child(4)").mouseover(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(9)").addClass("rates__content-bg--3");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(10) td:nth-child(4)").mouseover(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(10)").addClass("rates__content-bg--3");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(8) td:nth-child(4)").mouseout(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(8)").removeClass("rates__content-bg--3");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(9) td:nth-child(4)").mouseout(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(9)").removeClass("rates__content-bg--3");
+});
+
+$(".rates__content--individual .rates__content-middle tr:nth-child(10) td:nth-child(4)").mouseout(function() {
+  $(".rates__content--individual .rates__content-middle tr:nth-child(10)").removeClass("rates__content-bg--3");
+});
+
 /* END - Новые тарифы */

@@ -1,11 +1,16 @@
 /* Новые тарифы */
 
+.main > section.rates {
+    padding: 0;
+}
+
 .rates::after {
     display: none;
 }
 
 .rates__bg-top {
     height: 135px;
+    padding-top: 55px;
 }
 
 .rates__bg-bottom {

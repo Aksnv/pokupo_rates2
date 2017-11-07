@@ -10,6 +10,22 @@ $(".accordeon__trigger").click(function() {
   }
 });
 
+$(window).resize(function() {
+  if ($(".container--rates").css("width") < "978px") {
+    $(".rates__content-bottom .btn").addClass("btn--750");
+  } else {
+    $(".rates__content-bottom .btn").removeClass("btn--750");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".container--rates").css("width") < "978px") {
+    $(".rates__content-bottom .btn").addClass("btn--750");
+  } else {
+    $(".rates__content-bottom .btn").removeClass("btn--750");
+  }
+});
+
 /* Start-up */
 
 $(".rates__content--individual .rates__content-middle tr:nth-child(2) td:nth-child(2)").mouseover(function() {

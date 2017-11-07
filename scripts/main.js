@@ -1,12 +1,12 @@
 /* Новые тарифы */
 
 $(".accordeon__trigger").click(function() {
-  if ($(this).hasClass("accordeon__trigger--close")) {
-    $(this).removeClass("accordeon__trigger--close");
-    $(".rates__content--individual").slideDown();
-  } else {
-    $(this).addClass("accordeon__trigger--close");
+  if ($(this).hasClass("accordeon__trigger--open")) {
+    $(this).removeClass("accordeon__trigger--open");
     $(".rates__content--individual").slideUp();
+  } else {
+    $(this).addClass("accordeon__trigger--open");
+    $(".rates__content--individual").slideDown();
   }
 });
 

@@ -9,8 +9,7 @@
 }
 
 .rates__bg-top {
-    height: 135px;
-    /* padding-top: 55px; */
+    height: 135px; 
 }
 
 .rates__bg-bottom {
@@ -19,6 +18,10 @@
 
 .rates__header {
     position: relative;
+}
+
+.rates__header--base {
+    padding-top: 55px;
 }
 
 .rates__content table {
@@ -158,6 +161,10 @@
     margin: 0;
 }
 
+.rate__helper .btn {
+    color: #ffa800;
+}
+
 .rates__header--individual {
     height: 340px;
     padding-top: 86px;
@@ -168,6 +175,7 @@
 .rates__header--individual h1 {
     position: relative;
     margin-bottom: 20px;
+    padding-top: 54px;
     color: #fff;
 }
 
@@ -206,7 +214,7 @@
 
 .rates__content--individual {
     position: relative;
-    display: none;
+    /* display: none; */
 }
 
 /* .rates__content--individual-visible {

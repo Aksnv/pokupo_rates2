@@ -11,7 +11,7 @@ $(".accordeon__trigger").click(function() {
 });
 
 $(window).resize(function() {
-  if ($(".container--rates").css("width") < "978px") {
+  if (($(".container--rates").css("width") < "978px") && ($(".container--rates").css("width") > "360px")) {
     $(".rates__content-bottom .btn").addClass("btn--750");
   } else {
     $(".rates__content-bottom .btn").removeClass("btn--750");
@@ -19,7 +19,7 @@ $(window).resize(function() {
 });
 
 $(document).ready(function() {
-  if ($(".container--rates").css("width") < "978px") {
+  if (($(".container--rates").css("width") < "978px") && ($(".container--rates").css("width") > "360px")) {
     $(".rates__content-bottom .btn").addClass("btn--750");
   } else {
     $(".rates__content-bottom .btn").removeClass("btn--750");

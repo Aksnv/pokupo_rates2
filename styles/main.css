@@ -40,6 +40,27 @@
     width: 318px;
 }
 
+.rates__arrow {
+    position: absolute;
+    top: 34px;
+    content: "";
+    display: none;
+    width: 15px;
+    height: 31px;
+    background-image: url("../images/main_sprite.png");
+    border: none;
+}
+
+.rates__arrow--left {
+    left: 30px;
+    background-position: -98px -851px;
+}
+
+.rates__arrow--right {
+    right: 30px;
+    background-position: -117px -851px;
+}
+
 .rates__content-top table {
     min-height: 162px;
 }
@@ -132,6 +153,10 @@
     font-weight: 300;
 }
 
+.rates__content-middle tr:nth-child(8) td:first-child span {
+    display: block;
+}
+
 .rates-check {
     display: inline-block;
     width: 28px;
@@ -196,8 +221,7 @@
 }
 
 .rates__header--individual h1 > em {
-    display: inline-block;
-    vertical-align: top;
+    display: block;
     font-size: 30px;
     padding-bottom: 17px;
 }
@@ -206,6 +230,10 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
+}
+
+.rates__header--individual p > span {
+    display: block;
 }
 
 .rates__header--individual .btn-circle {
@@ -337,12 +365,20 @@
 @media screen and (max-width: 1023px) {
 
     .container--rates {
-        max-width: 978px;
+        max-width: 750px;
     }
 
     .rates__header--base.orange.patterned,
     .rates__content--individual + .rates__bg-bottom.black.patterned {
         display: block;
+    }
+
+    .rates__content tr > td {
+        width: 148px;
+    }
+
+    .rates__content tr > td:first-child {
+        width: 300px;
     }
 
     .rates__content-bottom .btn--750 {
@@ -365,6 +401,127 @@
 
     .rates__content-bottom .btn--750:hover::before {
         color: #fff;
+    }
+
+}
+
+@media screen and (max-width: 749px) {
+
+    .container--rates {
+        width: 360px;
+    }
+
+    .rates__header--base.rates__bg-top {
+        height: 96px;
+        padding-top: 34px;
+    }
+
+    .rates__header--base h1 {
+        font-size: 30px;
+    }
+
+    .rates__arrow {
+        display: block;
+    }
+
+    .rates__content-top table {
+        min-height: 140px;
+    }
+
+    .rates__content-top tr:first-child > td:nth-child(2) {
+        position: absolute;
+        top: 88px;
+        left: 136px;
+    }
+
+    .rates__content tr > td {
+        width: 56px;
+        font-size: 14px;
+    }
+
+    .rates__logo::before {
+        left: calc(50% - 14px);
+    }
+
+    .rates__content tr > td .rates__logo {
+        font-size: 20px;
+    }
+
+    .rates__content tr > td:first-child {
+        width: 150px;
+    }
+
+    .rates__content-middle tr:first-child td:first-child, 
+    .rates__content-middle tr:nth-child(2) td:first-child,
+    .rates__content-middle tr > td:first-child {
+        font-size: 13px;
+    }
+
+    .rates__content-middle tr:nth-child(8) td:first-child span {
+        display: inline;
+    }
+
+    .rates__content-middle tr:first-child td,
+    .rates__content-middle tr:nth-child(2) td {
+        font-size: 20px;
+    }
+
+    .rates__content tr > td:nth-child(3),
+    .rates__content tr > td:nth-child(4) {
+        display: none;
+    }
+
+    .rates__content-bottom table {
+        min-height: 88px;
+    }
+
+    .rates__content-bottom .btn {
+        position: absolute;
+        top: -8px;
+        left: calc(50% - 120px);
+        width: 240px;
+        background-color: #ed1c24;
+        color: #fff;
+    }
+
+    .rates__header--individual {
+        height: 420px;
+        padding-top: 84px;
+    }
+
+    .rates__header--individual h1 {
+        width: 315px;
+        font-size: 23px;
+        line-height: 27px;
+        margin: 0 auto;
+        margin-bottom: 28px;
+    }
+
+    .rates__header--individual h1::before {
+        top: -36px;
+    }
+
+    .rates__header--individual h1 > em {
+        display: inline;
+        font-size: 23px;
+    }
+
+    .rates__header--individual h1 span {
+        display: block;
+    }
+
+    .rates__header--individual p {
+        width: 305px;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    .rates__header--individual p > span {
+        display: inline;
+    }
+
+    .rates__header--individual .btn-circle {
+        top: 27px;
     }
 
 }
